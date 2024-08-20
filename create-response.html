@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inner&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inner', sans-serif;
+            background-color: #FFFFFF;
+            color: #07447C;
+        }
+
+        .sidebar {
+            background-color: #07447C;
+            min-height: 100vh;
+        }
+
+        .sidebar .nav-link {
+            color: #FFF;
+            font-size: 1rem;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar .nav-link:hover {
+            background-color: #2F96F4;
+            text-decoration: none;
+        }
+
+        .sidebar .nav-link i {
+            margin-right: 0.5rem;
+        }
+
+        .catalog-form-container {
+            background-color: #FFF;
+            border: 1px solid #07447C;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .btn-custom {
+            background-color: #07447C;
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .btn-custom:hover {
+            background-color: #052E58;
+        }
+
+        .btn-custom-secondary {
+            background-color: #D9D9D9;
+            color: #07447C;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .btn-custom-secondary:hover {
+            background-color: #B8B8B8;
+        }
+
+        .request-card {
+            background-color: #F8F9FA;
+            border: 1px solid #CED4DA;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>Propuesta a Solicitud 1</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-auto col-md-3 col-lg-2 sidebar d-flex flex-column justify-content-between">
+                <div class="text-center mt-4 mb-5">
+                    <a href="#">
+                        <img src=".\images\logo3.png" alt="Isologotipo" class="img-fluid">
+                    </a>
+                </div>
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="#"><i class="fa fa-table-list"></i> Catálogo</a>
+                    <a class="nav-link" href="#"><i class="fa fa-bell"></i> Notificaciones</a>
+                    <a class="nav-link" href="#"><i class="fa fa-envelope"></i> Solicitudes</a>
+                    <a class="nav-link" href="#"><i class="fa fa-money-check-alt"></i> Suscripción</a>
+                    <a class="nav-link" href="#"><i class="fa fa-user-friends"></i> Asesores</a>
+                    <a class="nav-link" href="#"><i class="fa fa-poll"></i> Encuestas</a>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                </nav>
+                <div>
+                    <a class="nav-link" href="#"><i class="fa fa-user"></i> Proveedor</a>
+                    <a class="nav-link" href="#"><i class="fa fa-sign-out-alt"></i> Salir</a>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="col px-4 py-5">
+                <h2 class="text-left">Propuesta a Solicitud 1</h2>
+                <div class="row">
+                    <!-- Solicitud -->
+                    <div class="col-md-6">
+                        <div class="request-card">
+                            <h3>Solicitud 1</h3>
+                            <p><strong>Problemática:</strong> Descripción del problema aquí.</p>
+                            <p><strong>Tipo de Problemática:</strong> Tipo aquí.</p>
+                            <p><strong>Descripción:</strong> Descripción detallada aquí.</p>
+                            <p><strong>Tipo de Agua Afectada:</strong> Tipo de agua aquí.</p>
+                            <p><strong>Ubicación:</strong> Ubicación aquí.</p>
+                            <p><strong>Tiempo de Resolución:</strong> Desde fecha hasta fecha.</p>
+                            <p><strong>Requisitos Técnicos:</strong> Requisitos aquí.</p>
+                        </div>
+                    </div>
+                    <!-- Propuesta -->
+                    <div class="col-md-6">
+                        <div class="catalog-form-container">
+                            <form>
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <label for="catalogSelect" class="form-label">Seleccionar Catálogo</label>
+                                        <select class="form-select" id="catalogSelect">
+                                            <option value="">Seleccione un catálogo</option>
+                                            <option value="catalogo1">Catálogo 1</option>
+                                            <option value="catalogo2">Catálogo 2</option>
+                                            <!-- Agregar más opciones de catálogo aquí -->
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="problematica" class="form-label">Problemática</label>
+                                        <input type="text" class="form-control" id="problematica" placeholder="Ingrese problemática">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="tipoProblematica" class="form-label">Tipo de Problemática</label>
+                                        <input type="text" class="form-control" id="tipoProblematica" placeholder="Ingrese tipo de problemática">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <label for="descripcion" class="form-label">Descripción</label>
+                                        <textarea class="form-control" id="descripcion" rows="3" placeholder="Ingrese descripción"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="tipoAgua" class="form-label">Tipo de Agua Afectada</label>
+                                        <input type="text" class="form-control" id="tipoAgua" placeholder="Ingrese tipo de agua">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="ubicacion" class="form-label">Ubicación</label>
+                                        <input type="text" class="form-control" id="ubicacion" placeholder="Ingrese ubicación">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="fechaDesde" class="form-label">Fecha Desde</label>
+                                        <input type="date" class="form-control" id="fechaDesde">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="fechaHasta" class="form-label">Fecha Hasta</label>
+                                        <input type="date" class="form-control" id="fechaHasta">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <label for="requisitos" class="form-label">Requisitos Técnicos</label>
+                                        <input type="text" class="form-control" id="requisitos" placeholder="Ingrese requisitos técnicos">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn-custom">Guardar Propuesta</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
