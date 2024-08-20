@@ -101,7 +101,8 @@
                 <nav class="navbar-nav" aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Portfolio</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Crear</li>
+                        <li class="breadcrumb-item" aria-current="page"><a href="#">Propiedades Morón</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Crear Propiedad</li>
                     </ol>
                 </nav>
                 <hr>
@@ -109,30 +110,89 @@
                       
                     <div class="row">
                       <div class="col-md-6">
-                        <h3 style="text-align: center;">Portada</h3>
                         <div class="text-center">
-                            
-                            <img src="./images/portfolio.jpg" class="prop-image" alt="product-image">
-                            <label for="formFile" class="form-label">Seleccione una imágen de portada</label>
-                            <input class="form-control" type="file" id="formFile" />
+                            <img src="./images/casa4.jpg" class="prop-image" alt="product-image">
+                            <label for="formFileMultiple" class="form-label">Seleccione varias imágenes</label>
+                            <input class="form-control" type="file" id="formFileMultiple" multiple />
                         </div>
                       </div>
                       <div class="col-md-6 personal-info">
-                        <h3>Datos del Portfolio</h3>
+                        <h3>Información de la propiedad</h3>
                         
                         <form>
                             <div class="row mb-4">
                               <div class="col">
                                 <div data-mdb-input-init class="form-outline">
-                                    <label class="form-label" for="form6Example1">Titulo</label>
+                                    <label class="form-label" for="form6Example1">Provincia</label>
                                     <input type="text" id="form6Example1" class="form-control" />
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div data-mdb-input-init class="form-outline">
+                                    <label class="form-label" for="form6Example2">Localidad</label>
+                                    <select id="state" class="form-select">
+                                        <option selected>Seleccione...</option>
+                                        <option>Gran Buenos Aires</option>
+                                        <option>CABA</option>
+                                        <option>Morón</option>
+                                        <option>Ituzaingó</option>
+                                        <option>Castelar</option>
+                                    </select>
                                 </div>
                               </div>
                             </div>
                             <div data-mdb-input-init class="form-outline mb-4">
-                                <label class="form-label" for="form6Example3">Descripción</label>
-                                <textarea class="form-control" rows="3" placeholder="Ingrese una descripción de las propiedades que tendrá este portfolio." required></textarea>
+                                <label class="form-label" for="form6Example3">Precio (USD)</label>
+                                <input type="text" id="form6Example3" class="form-control" />
                             </div>
+                          
+                            <!-- Text input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form6Example2">Tipo de propiedad</label>
+                                <select id="state" class="form-select">
+                                    <option selected>Seleccione...</option>
+                                    <option>Casa</option>
+                                    <option>Departamento</option>
+                                    <option>Terreno</option>
+                                    <option>Local</option>
+                                </select>
+                            </div>
+                          
+                            <!-- Email input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form6Example5">Cantidad de ambientes</label>
+                                <input type="number" id="form6Example5" class="form-control" />
+                            </div>
+                          
+                            <!-- Number input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form6Example5">Metros cuadrados</label>
+                                <input type="number" id="form6Example5" class="form-control" />
+                            </div>
+                          
+                            <!-- Message input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form6Example5">Baños</label>
+                                <input type="number" id="form6Example5" class="form-control" />
+                            </div>
+
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form6Example5">Cocheras</label>
+                                <input type="number" id="form6Example5" class="form-control" />
+                            </div>
+                          
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                              <input
+                                class="form-check-input me-2"
+                                type="checkbox"
+                                value=""
+                                id="form6Example8"
+                                checked
+                              />
+                              <label class="form-check-label" for="form6Example8">¿Acepta mascotas?</label>
+                            </div>
+                          
                             <!-- Submit button -->
                             <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Crear</button>
                           </form>
