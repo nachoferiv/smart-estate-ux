@@ -122,6 +122,10 @@
         .result-header .result-actions .result-sorting select option {
         color: #3c4142;
         }
+        
+        .request-container {
+            display: flex;
+        }
     </style>
     <title>Smart Estate | Bienvenido</title>
 </head>
@@ -274,141 +278,240 @@
                         </div>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-md-3 g-4 py-4">
-                    <div class="col">
-                        <div class="card">
-                            <img src="./images/casa1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Casa 5 ambientes en barrio privado a estrenar</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                    dignissimos accusantium amet similique velit iste.</p>
+                <div class="row">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="pendientes-tab" data-bs-toggle="tab" href="#pendientes" role="tab" aria-controls="pendientes" aria-selected="true">Pendientes</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="negociacion-tab" data-bs-toggle="tab" href="#negociacion" role="tab" aria-controls="negociacion" aria-selected="false">En Negociación</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="cerradas-tab" data-bs-toggle="tab" href="#cerradas" role="tab" aria-controls="negociacion" aria-selected="false">Cerradas</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="pendientes" role="tabpanel" aria-labelledby="pendientes-tab">
+                        <div class="row row-cols-1 row-cols-md-3 g-4 py-4  d-flex">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/casa1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Casa 5 ambientes en barrio privado a estrenar</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                            dignissimos accusantium amet similique velit iste.</p>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-around">
+                                        <h2>Consultar precio</h2>
+                                        <button class="green-background btn btn-success">Ver detalle</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mb-5 d-flex justify-content-around">
-                                <h2>Consultar precio</h2>
-                                <button class="green-background btn btn-success">Ver detalle</button>
+                
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/casa2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Casa 4 ambientes con pileta</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                            dignissimos accusantium amet similique velit iste.</p>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-around">
+                                        <h2>Consultar precio</h2>
+                                        <button class="green-background btn btn-success">Ver detalle</button>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/casa3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Solicitud 3</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                            dignissimos accusantium amet similique velit iste.</p>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-around">
+                                        <h2>Consultar precio</h2>
+                                        <button class="green-background btn btn-success">Ver detalle</button>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/casa4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Solicitud 4</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                            dignissimos accusantium amet similique velit iste.</p>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-around">
+                                        <h2>Consultar precio</h2>
+                                        <button class="green-background btn btn-success">Ver detalle</button>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/casa5.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Solicitud 5</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                            dignissimos accusantium amet similique velit iste.</p>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-around">
+                                        <h2>Consultar precio</h2>
+                                        <button class="green-background btn btn-success">Ver detalle</button>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/casa6.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Solicitud 6</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                            dignissimos accusantium amet similique velit iste.</p>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-around">
+                                        <h2>Consultar precio</h2>
+                                        <button class="green-background btn btn-success">Ver detalle</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/casa7.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Solicitud 4</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                            dignissimos accusantium amet similique velit iste.</p>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-around">
+                                        <h2>Consultar precio</h2>
+                                        <button class="green-background btn btn-success">Ver detalle</button>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/casa8.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Solicitud 5</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                            dignissimos accusantium amet similique velit iste.</p>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-around">
+                                        <h2>Consultar precio</h2>
+                                        <button class="green-background btn btn-success">Ver detalle</button>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/casa9.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Solicitud 6</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                            dignissimos accusantium amet similique velit iste.</p>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-around">
+                                        <h2>Consultar precio</h2>
+                                        <button class="green-background btn btn-success">Ver detalle</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-        
-                    <div class="col">
-                        <div class="card">
-                            <img src="./images/casa2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Casa 4 ambientes con pileta</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                    dignissimos accusantium amet similique velit iste.</p>
+                    <div class="tab-pane fade" id="negociacion" role="tabpanel" aria-labelledby="negociacion-tab">
+                        <div class="row row-cols-1 row-cols-md-3 g-4 py-4  d-flex">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/casa1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Casa 5 ambientes en barrio privado a estrenar</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                            dignissimos accusantium amet similique velit iste.</p>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-around">
+                                        <h2>Consultar precio</h2>
+                                        <button class="green-background btn btn-success">Ver detalle</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mb-5 d-flex justify-content-around">
-                                <h2>Consultar precio</h2>
-                                <button class="green-background btn btn-success">Ver detalle</button>
+                
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/casa2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Casa 4 ambientes con pileta</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                            dignissimos accusantium amet similique velit iste.</p>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-around">
+                                        <h2>Consultar precio</h2>
+                                        <button class="green-background btn btn-success">Ver detalle</button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-        
-                    <div class="col">
-                        <div class="card">
-                            <img src="./images/casa3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Solicitud 3</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                    dignissimos accusantium amet similique velit iste.</p>
-                            </div>
-                            <div class="mb-5 d-flex justify-content-around">
-                                <h2>Consultar precio</h2>
-                                <button class="green-background btn btn-success">Ver detalle</button>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col">
-                        <div class="card">
-                            <img src="./images/casa4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Solicitud 4</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                    dignissimos accusantium amet similique velit iste.</p>
-                            </div>
-                            <div class="mb-5 d-flex justify-content-around">
-                                <h2>Consultar precio</h2>
-                                <button class="green-background btn btn-success">Ver detalle</button>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col">
-                        <div class="card">
-                            <img src="./images/casa5.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Solicitud 5</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                    dignissimos accusantium amet similique velit iste.</p>
-                            </div>
-                            <div class="mb-5 d-flex justify-content-around">
-                                <h2>Consultar precio</h2>
-                                <button class="green-background btn btn-success">Ver detalle</button>
+                
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/casa3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Solicitud 3</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                            dignissimos accusantium amet similique velit iste.</p>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-around">
+                                        <h2>Consultar precio</h2>
+                                        <button class="green-background btn btn-success">Ver detalle</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-        
-                    <div class="col">
-                        <div class="card">
-                            <img src="./images/casa6.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Solicitud 6</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                    dignissimos accusantium amet similique velit iste.</p>
+                    <div class="tab-pane fade" id="cerradas" role="tabpanel" aria-labelledby="cerradas-tab">
+                        <div class="row row-cols-1 row-cols-md-3 g-4 py-4  d-flex">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/casa1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Casa 5 ambientes en barrio privado a estrenar</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                            dignissimos accusantium amet similique velit iste.</p>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-around">
+                                        <h2>Consultar precio</h2>
+                                        <button class="green-background btn btn-success">Ver detalle</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mb-5 d-flex justify-content-around">
-                                <h2>Consultar precio</h2>
-                                <button class="green-background btn btn-success">Ver detalle</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="./images/casa7.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Solicitud 4</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                    dignissimos accusantium amet similique velit iste.</p>
-                            </div>
-                            <div class="mb-5 d-flex justify-content-around">
-                                <h2>Consultar precio</h2>
-                                <button class="green-background btn btn-success">Ver detalle</button>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col">
-                        <div class="card">
-                            <img src="./images/casa8.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Solicitud 5</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                    dignissimos accusantium amet similique velit iste.</p>
-                            </div>
-                            <div class="mb-5 d-flex justify-content-around">
-                                <h2>Consultar precio</h2>
-                                <button class="green-background btn btn-success">Ver detalle</button>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col">
-                        <div class="card">
-                            <img src="./images/casa9.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Solicitud 6</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                    dignissimos accusantium amet similique velit iste.</p>
-                            </div>
-                            <div class="mb-5 d-flex justify-content-around">
-                                <h2>Consultar precio</h2>
-                                <button class="green-background btn btn-success">Ver detalle</button>
+                
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/casa2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Casa 4 ambientes con pileta</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                            dignissimos accusantium amet similique velit iste.</p>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-around">
+                                        <h2>Consultar precio</h2>
+                                        <button class="green-background btn btn-success">Ver detalle</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 <nav aria-label="...">
                     <ul class="pagination">
                         <li class="page-item disabled">
