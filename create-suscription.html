@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inner&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inner', sans-serif;
+            background-color: #FFFFFF;
+            color: #07447C;
+        }
+
+        .sidebar {
+            background-color: #07447C;
+            min-height: 100vh;
+        }
+
+        .sidebar .nav-link {
+            color: #FFF;
+            font-size: 1rem;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar .nav-link:hover {
+            background-color: #2F96F4;
+            text-decoration: none;
+        }
+
+        .sidebar .nav-link i {
+            margin-right: 0.5rem;
+        }
+
+        .payment-form-container {
+            background-color: #FFF;
+            border: 1px solid #07447C;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            margin-left: 0;
+        }
+
+        .btn-custom {
+            background-color: #07447C;
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .btn-custom:hover {
+            background-color: #052E58;
+        }
+
+        .form-control {
+            margin-bottom: 15px;
+        }
+    </style>
+    <title>Pago de Suscripción</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-auto col-md-3 col-lg-2 sidebar d-flex flex-column justify-content-between">
+                <div class="text-center mt-4 mb-5">
+                    <a href="#">
+                        <img src=".\images\logo3.png" alt="Isologotipo" class="img-fluid">
+                    </a>
+                </div>
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="#"><i class="fa fa-table-list"></i> Catálogo</a>
+                    <a class="nav-link" href="#"><i class="fa fa-bell"></i> Notificaciones</a>
+                    <a class="nav-link" href="#"><i class="fa fa-envelope"></i> Solicitudes</a>
+                    <a class="nav-link" href="#"><i class="fa fa-money-check-alt"></i> Suscripción</a>
+                    <a class="nav-link" href="#"><i class="fa fa-user-friends"></i> Asesores</a>
+                    <a class="nav-link" href="#"><i class="fa fa-poll"></i> Encuestas</a>
+                </nav>
+                <div>
+                    <a class="nav-link" href="#"><i class="fa fa-user"></i> Proveedor</a>
+                    <a class="nav-link" href="#"><i class="fa fa-sign-out-alt"></i> Salir</a>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="col px-4 py-5">
+                <h2 class="text-left">Suscripción &rarr; Pago de Suscripción</h2>
+                <div class="payment-form-container">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombreTarjeta" class="form-label">Nombre en la tarjeta</label>
+                            <input type="text" class="form-control" id="nombreTarjeta" placeholder="Nombre del titular">
+                        </div>
+                        <div class="mb-3">
+                            <label for="numeroTarjeta" class="form-label">Número de la tarjeta</label>
+                            <input type="text" class="form-control" id="numeroTarjeta" placeholder="0000 0000 0000 0000">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="fechaExpiracion" class="form-label">Fecha de expiración</label>
+                                <input type="text" class="form-control" id="fechaExpiracion" placeholder="MM/AA">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="codigoCVV" class="form-label">Código CVV</label>
+                                <input type="text" class="form-control" id="codigoCVV" placeholder="123">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección de facturación</label>
+                            <input type="text" class="form-control" id="direccion" placeholder="Dirección completa">
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" class="btn-custom">Pagar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
