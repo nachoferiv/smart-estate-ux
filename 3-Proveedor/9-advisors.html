@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inner&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inner', sans-serif;
             background-color: #FFFFFF;
-            color: #333;
+            color: #07447C;
         }
 
         .sidebar {
@@ -36,23 +36,12 @@
             margin-right: 0.5rem;
         }
 
-        .profile-container {
-            background-color: #F5F5F5;
-            border-radius: 15px;
-            padding: 20px;
-            margin: 20px;
-            border: 2px solid #07447C;
-        }
-
-        .profile-container h2 {
-            color: #0D4C88;
-            margin-bottom: 20px;
-        }
-
-        .profile-container .form-control {
+        .form-container {
             background-color: #FFF;
             border: 1px solid #07447C;
-            color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
         }
 
         .btn-custom {
@@ -65,23 +54,19 @@
         }
 
         .btn-custom:hover {
-            background-color: #07447C;
+            background-color: #052E58;
         }
 
-        .btn-custom-secondary {
-            background-color: #FFF;
-            color: #07447C;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 1rem;
+        .table-container {
+            overflow-x: auto;
         }
 
-        .btn-custom-secondary:hover {
-            background-color: #B8B8B8;
+        .table th,
+        .table td {
+            vertical-align: middle;
         }
     </style>
-    <title>Perfil Proveedor</title>
+    <title>Alta de Asesores</title>
 </head>
 
 <body>
@@ -91,66 +76,87 @@
             <div class="col-auto col-md-3 col-lg-2 sidebar d-flex flex-column justify-content-between">
                 <div class="text-center mt-4 mb-5">
                     <a href="#">
-                        <img src=".\images\logo3.png" alt="Isologotipo" class="img-fluid">
+                        <img src="C:\Users\leafnoise\Desktop\proyecto de la facu\images\logo3.png" alt="Isologotipo" class="img-fluid">
                     </a>
                 </div>
                 <nav class="nav flex-column">
-                    <a class="nav-link" href="#"><i class="fa fa-table-list"></i> Catalogo</a>
+                    <a class="nav-link" href="#"><i class="fa fa-table-list"></i> Catálogo</a>
                     <a class="nav-link" href="#"><i class="fa fa-bell"></i> Notificaciones</a>
                     <a class="nav-link" href="#"><i class="fa fa-envelope"></i> Solicitudes</a>
                     <a class="nav-link" href="#"><i class="fa fa-money-check-alt"></i> Suscripción</a>
                     <a class="nav-link" href="#"><i class="fa fa-user-friends"></i> Asesores</a>
                     <a class="nav-link" href="#"><i class="fa fa-poll"></i> Encuestas</a>
+                    </br>
+                    </br>
+                    </br>
                 </nav>
                 <div>
                     <a class="nav-link" href="#"><i class="fa fa-user"></i> Proveedor</a>
                     <a class="nav-link" href="#"><i class="fa fa-sign-out-alt"></i> Salir</a>
                 </div>
             </div>
+
             <!-- Main Content -->
             <div class="col px-4 py-5">
-                <h2 class="text-left">Perfil Proveedor</h2>
-                <div class="profile-container mx-auto">
+                <h2 class="text-left">Asesores</h2>
+                <div class="form-container mx-auto">
                     <form>
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                <label for="razonSocial" class="form-label">Razón Social</label>
-                                <input type="text" class="form-control" id="razonSocial" placeholder="ejemp">
+                                <label for="nombreAsesor" class="form-label">Nombre del Asesor</label>
+                                <input type="text" class="form-control" id="nombreAsesor" placeholder="Nombre del Asesor">
                             </div>
                             <div class="col-md-6">
-                                <label for="rubro" class="form-label">Rubro</label>
-                                <input type="text" class="form-control" id="rubro" placeholder="ejemp">
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="direccion" class="form-label">Dirección</label>
-                                <input type="text" class="form-control" id="direccion" placeholder="ejemp">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="telefono" class="form-label">Teléfono</label>
-                                <input type="text" class="form-control" id="telefono" placeholder="ejemp">
+                                <label for="especialidad" class="form-label">Especialidad</label>
+                                <input type="text" class="form-control" id="especialidad" placeholder="Especialidad">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                <label for="correo" class="form-label">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="correo" placeholder="ejemp">
+                                <label for="emailAsesor" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="emailAsesor" placeholder="Email">
                             </div>
                             <div class="col-md-6">
-                                <label for="web" class="form-label">Página Web</label>
-                                <input type="text" class="form-control" id="web" placeholder="ejemp">
+                                <label for="telefonoAsesor" class="form-label">Teléfono</label>
+                                <input type="text" class="form-control" id="telefonoAsesor" placeholder="Teléfono">
                             </div>
                         </div>
                         <div class="d-flex justify-content-end">
-                            <button type="button" class="btn-custom-secondary me-3">Editar</button>
                             <button type="submit" class="btn-custom">Guardar</button>
                         </div>
                     </form>
                 </div>
+
+                <div class="table-container">
+                    <table class="table table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Nombre del Asesor</th>
+                                <th>Especialidad</th>
+                                <th>Email</th>
+                                <th>Teléfono</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Asesor 1</td>
+                                <td>Especialidad 1</td>
+                                <td>email1@example.com</td>
+                                <td>123456789</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">Editar</button>
+                                    <button class="btn btn-sm btn-outline-danger">Eliminar</button>
+                                </td>
+                            </tr>
+                            <!-- Más filas según sea necesario -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 

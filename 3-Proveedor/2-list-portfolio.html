@@ -11,7 +11,7 @@
         body {
             font-family: 'Inner', sans-serif;
             background-color: #FFFFFF;
-            color: #07447C;
+            color: #333;
         }
 
         .sidebar {
@@ -36,33 +36,50 @@
             margin-right: 0.5rem;
         }
 
-        .payment-form-container {
+        .catalog-container {
             background-color: #FFF;
             border: 1px solid #07447C;
             border-radius: 10px;
-            padding: 20px;
-            max-width: 600px;
-            margin-left: 0;
+            padding: 15px;
+            margin-bottom: 15px;
+            position: relative;
         }
 
-        .btn-custom {
+        .catalog-container:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-view {
+            position: absolute;
+            top: 15px;
+            right: 15px;
             background-color: #07447C;
             color: #FFF;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 50px;
+            padding: 5px 10px;
             font-size: 1rem;
         }
 
-        .btn-custom:hover {
+        .btn-view:hover {
             background-color: #052E58;
         }
 
-        .form-control {
-            margin-bottom: 15px;
+        .btn-create-catalog {
+            background-color: #07447C;
+            color: #FFF;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            float: right;
+        }
+
+        .btn-create-catalog:hover {
+            background-color: #052E58;
         }
     </style>
-    <title>Pago de Suscripción</title>
+    <title>Catálogos</title>
 </head>
 
 <body>
@@ -72,7 +89,7 @@
             <div class="col-auto col-md-3 col-lg-2 sidebar d-flex flex-column justify-content-between">
                 <div class="text-center mt-4 mb-5">
                     <a href="#">
-                        <img src=".\images\logo3.png" alt="Isologotipo" class="img-fluid">
+                        <img src="..\images\logo3.png" alt="Isologotipo" class="img-fluid">
                     </a>
                 </div>
                 <nav class="nav flex-column">
@@ -82,6 +99,9 @@
                     <a class="nav-link" href="#"><i class="fa fa-money-check-alt"></i> Suscripción</a>
                     <a class="nav-link" href="#"><i class="fa fa-user-friends"></i> Asesores</a>
                     <a class="nav-link" href="#"><i class="fa fa-poll"></i> Encuestas</a>
+                    </br>
+                    </br>
+                    </br>
                 </nav>
                 <div>
                     <a class="nav-link" href="#"><i class="fa fa-user"></i> Proveedor</a>
@@ -90,35 +110,24 @@
             </div>
             <!-- Main Content -->
             <div class="col px-4 py-5">
-                <h2 class="text-left">Suscripción &rarr; Pago de Suscripción</h2>
-                <div class="payment-form-container">
-                    <form>
-                        <div class="mb-3">
-                            <label for="nombreTarjeta" class="form-label">Nombre en la tarjeta</label>
-                            <input type="text" class="form-control" id="nombreTarjeta" placeholder="Nombre del titular">
-                        </div>
-                        <div class="mb-3">
-                            <label for="numeroTarjeta" class="form-label">Número de la tarjeta</label>
-                            <input type="text" class="form-control" id="numeroTarjeta" placeholder="0000 0000 0000 0000">
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="fechaExpiracion" class="form-label">Fecha de expiración</label>
-                                <input type="text" class="form-control" id="fechaExpiracion" placeholder="MM/AA">
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="codigoCVV" class="form-label">Código CVV</label>
-                                <input type="text" class="form-control" id="codigoCVV" placeholder="123">
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="direccion" class="form-label">Dirección de facturación</label>
-                            <input type="text" class="form-control" id="direccion" placeholder="Dirección completa">
-                        </div>
-                        <div class="d-flex justify-content-end">
-                            <button type="submit" class="btn-custom">Pagar</button>
-                        </div>
-                    </form>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="text-left">Catálogo</h2>
+                    <button class="btn-create-catalog">+ Crear Catálogo</button>
+                </div>
+                <div class="catalog-container">
+                    <h3>Catálogo 1</h3>
+                    <p>Categoría: Química &nbsp;&nbsp; Servicio: Sí &nbsp;&nbsp; Fecha creación: 01/07/2024</p>
+                    <button class="btn-view"><i class="fa fa-eye"></i></button>
+                </div>
+                <div class="catalog-container">
+                    <h3>Catálogo 2</h3>
+                    <p>Categoría: Alimentos &nbsp;&nbsp; Servicio: No &nbsp;&nbsp; Fecha creación: 21/01/2024</p>
+                    <button class="btn-view"><i class="fa fa-eye"></i></button>
+                </div>
+                <div class="catalog-container">
+                    <h3>Catálogo 3</h3>
+                    <p>Categoría: Química &nbsp;&nbsp; Servicio: Sí &nbsp;&nbsp; Fecha creación: 01/07/2024</p>
+                    <button class="btn-view"><i class="fa fa-eye"></i></button>
                 </div>
             </div>
         </div>
